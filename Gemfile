@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.2.0"
 
+gem "active_model_serializers", "0.8.3"
 gem "airbrake"
 gem "bourbon", "~> 4.1.0"
 gem "coffee-rails", "~> 4.1.0"
