@@ -17,6 +17,8 @@ RSpec.describe Api::V1::ProjectsController, :type => :controller do
       serialized_projects = ActiveModel::ArraySerializer.new(ordered_projects,
         root: :projects)
 
+      json = JSON.parse(response.body)
+
       expect(response.status).to eq 200
       expect(json).to be_json_eq(serialized_projects)
     end
